@@ -1,29 +1,37 @@
 TPS
 ===
 
-``TPS`` is the one of the plugin configuration parameter.
+.. admonition:: **Understanding TPS**
+   :class: seealso
 
-The ``TPS`` - this option is very useful and has many folks, it handles micro-lags on your server, and if it lower that specified then most of the features will stop their work for a while. 
-In simple words, its so similar to ``FPS`` when it lowers on the server - everything is lagging.
+   **TPS**, short for **Ticks Per Second**, is a critical configuration parameter used for optimizing server performance.
+
+Overview
+********
+
+**TPS** prevents micro-lags by maintaining a specific TPS threshold. If TPS falls below the threshold, certain server features may temporarily stop working. It's similar to FPS (Frames Per Second) for clients, where low TPS results in server-wide lag.
+
+**Configuration**
+***************
+
+.. admonition:: **Configuration**
+   :class: important
+   
+   Configuring **TPS** in your server setup is essential for optimal performance. You can adjust the TPS value to meet the specific needs of your server. Here are examples of how to set TPS:
 
 
-.. warning::
+   RocketMod ``UnturnedGuard.RocketMod.configuration.xml``
+   
+   .. code-block:: xml
 
-    If you started getting a lot of logs in console about TPS that this is low, etc. We recommend to disable the logging of the TPS, by setting the ``ReportAnomalyTPS`` to ``false``.
-    The TPS is very unique per every server and should be configured by playing with TPS, because your server could have high demand but actually its fine for you standard work of your server.
+      <ReportAnomalyTPS>true</ReportAnomalyTPS>
+      <TPS>47</TPS>
 
+   OpenMod ``config.yaml``
 
-RocketMod ``UnturnedGuard.RocketMod.configuration.xml``
+   .. code-block:: yaml
 
-.. code-block:: xml
+      ReportAnomalyTPS: true
+      TPS: 47
 
-    <ReportAnomalyTPS>true</ReportAnomalyTPS>
-	<TPS>47</TPS>
-
-
-OpenMod ``config.yaml``
-
-.. code-block:: yaml
-
-	ReportAnomalyTPS: true
-	TPS: 47
+   By playing and configuring the **TPS** value and other related settings, you can ensure a smoother gaming experience for all players.

@@ -1,22 +1,26 @@
-Moderation2 is Supported?
+Is Moderation2 Supported?
 =========================
 
-Indeed, by default, UnturnedGuard has Moderation2 support, to enable the integration you need to configure your plugin configuration, by default it's disabled, and set to false.
+UnturnedGuard offers built-in support for Moderation2, a powerful moderation plugin. By default, this integration is disabled to give you control over your configuration.
 
-Open-up your file configuration of the plugin, and set the ``Moderation2Integration`` to true, this would look like this:
+.. admonition:: **Moderation2 Integration**
 
-RocketMod ``UnturnedGuard.RocketMod.configuration.xml``
+    **For RocketMod** ``UnturnedGuard.RocketMod.configuration.xml:``
 
-.. code-block:: xml
+    In your plugin configuration file, locate the following setting and set it to true:
 
-	<Moderation2Integration>true</Moderation2Integration>
+    .. code-block:: xml
 
+        <Moderation2Integration>true</Moderation2Integration>
 
-OpenMod ``config.yaml``
+    **For OpenMod** ``config.yaml:``
 
-.. code-block:: yaml
+    In your OpenMod configuration file, set the following option to true:
 
-	Moderation2Integration: true
+    .. code-block:: yaml
 
+        Moderation2Integration: true
 
-Done! Reload your plugin or restart the server, and don't forget to save the configuration file.
+    Once you've made this change, remember to reload your plugin or restart the server.
+
+    With Moderation2 support enabled, you can boost your server's moderation capabilities.

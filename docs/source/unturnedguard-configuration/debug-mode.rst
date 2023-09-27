@@ -1,31 +1,38 @@
 DebugMode
 ==========
 
-The **DebugMode** (debug mode) configuration parameter is an essential setting offered by UnturnedGuard, designed to manage detailed information in logs.
+
+.. admonition:: **Understanding DebugMode**
+   :class: seealso
+
+   **DebugMode** is a crucial configuration parameter provided by UnturnedGuard, designed to manage detailed information in logs.
 
 Overview
 ********
 
-**DebugMode** is specificly made for testing, it enables a additional logging in the console and other useful information for Developers of the UnturnedGuard. Don't change this option while Developers didn't asked to.
-
-Configuration
-*************
-
-Here's how you can configure the **DebugMode** in UnturnedGuard for different mod frameworks, you have those options to enter in **DebugMode**:
-
-- **true** (to turn on this option)
-- **false** (to turn off this option)
+**DebugMode** is specifically designed for testing. It enables additional logging in the console and provides useful information for UnturnedGuard developers. Do not change this option unless instructed by developers.
 
 
-RocketMod configuration (UnturnedGuard.RocketMod.configuration.xml)
+**Configuration**
+***************
 
-.. code-block:: xml
+.. admonition:: **Configuration**
+   :class: important
 
-	<DebugMode>false</DebugMode>
+   Configuring **DebugMode** in UnturnedGuard is straightforward. You have two options to set DebugMode:
 
+   - ``true`` (to enable this option)
+   - ``false`` (to disable this option)
 
-OpenMod configuration (config.yaml)
+   **For RocketMod Configuration (UnturnedGuard.RocketMod.configuration.xml):**
 
-.. code-block:: yaml
+   .. code-block:: xml
 
-	DebugMode: false
+       <DebugMode>false</DebugMode>
+
+   **For OpenMod Configuration (config.yaml):**
+
+   .. code-block:: yaml
+
+       DebugMode: false
+
